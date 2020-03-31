@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ro.utcluj.controller.RegisterController">
+   <children>
+      <TextField fx:id="nameField" layoutX="126.0" layoutY="31.0" promptText="Name" />
+      <TextField fx:id="usernameField" layoutX="126.0" layoutY="66.0" promptText="Username" />
+      <PasswordField fx:id="passwordField" layoutX="127.0" layoutY="107.0" onAction="#passwordConf" onKeyPressed="#passwordConf" onKeyReleased="#passwordConf" promptText="Password" />
+      <PasswordField fx:id="confirmPasswordField" layoutX="127.0" layoutY="148.0" onAction="#passwordConf" onKeyPressed="#passwordConf" onKeyReleased="#passwordConf" promptText="Confirm password" />
+      <TextField fx:id="emailField" layoutX="126.0" layoutY="188.0" promptText="email" />
+      <TextField fx:id="addressField" layoutX="126.0" layoutY="227.0" promptText="Address" />
+      <TextField fx:id="phoneNumberField" layoutX="126.0" layoutY="262.0" promptText="Phone Number" />
+      <TextField fx:id="balanceAccountField" layoutX="127.0" layoutY="297.0" promptText="Balance Account" />
+      <Button layoutX="126.0" layoutY="359.0" mnemonicParsing="false" onAction="#buttonRegisteredPressed" text="Register" />
+      <Text fx:id="errorMessageText" fill="#dd0909" layoutX="17.0" layoutY="346.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="368.9999969005585" />
+      <Text fx:id="passwordDoesNotMatchText" layoutX="296.0" layoutY="173.0" smooth="false" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="96.99999690055847" />
+      <Text fx:id="passwordStrongEnounghText" layoutX="296.0" layoutY="132.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="96.99999690055847" />
+      <Button layoutX="235.0" layoutY="359.0" mnemonicParsing="false" onAction="#buttonBackPressed" text="Back" />
+   </children>
+</AnchorPane>
